@@ -1,0 +1,11 @@
+let each  = fn(arr, f) {
+    let loop = fn(index) {
+        if (index >= len(arr)) {
+            return null;
+        }
+        f(arr[index]);
+        loop(index + 1);
+    };
+    
+    loop(0);
+};
